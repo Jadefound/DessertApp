@@ -1,0 +1,15 @@
+@media screen and (min-width: 481px) {
+    .main-container{
+        grid-template-columns: 100px;
+        .leftside{
+            .product-list {
+                grid-template-columns: 1fr;
+                grid-template-rows: 2fr;
+            }
+        }
+    }
+  }
+
+
+ // - Mobile: 375px
+ // - Desktop: 1440px

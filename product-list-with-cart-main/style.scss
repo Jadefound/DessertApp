@@ -1,0 +1,84 @@
+@import "components/reset";
+@import "components/typography";
+@import "components/buttons";
+@import "components/card";
+@import "components/responsiveness";
+
+body{
+    background-color: hsl(20, 50%, 98%);
+    width: 0 auto;
+}
+
+.main-container{
+    overflow: hidden;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin: 5rem 0rem;
+    // gap: 100px;
+    padding-inline: 20px;
+
+    
+
+    .leftside{
+
+        h1{
+            padding-left: 30px;
+        }
+        
+
+        .product-list{
+            // border: 2PX solid black;
+            padding: 30px;
+            // place-items: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr) ;
+            gap: 20px;
+        }
+
+    }
+
+    .rightside{
+        width: 30dvw;
+        background-color: #fff;
+        height: 30%;
+        // border: 2px solid red;
+        padding: 10px;
+        position: sticky;
+        top: 10px;
+        right: 20px;
+
+        h2{
+            color: hsl(14, 86%, 42%);
+        }
+        
+        .center{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            p{
+                font-size: 16px;
+                color: hsl(14, 65%, 9%);
+            }
+        }
+
+        img{
+            width: 15dvw;
+            opacity: .4;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+

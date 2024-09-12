@@ -1,0 +1,16 @@
+button{
+    padding: 10px 40px;
+    border: 1px solid hsl(14, 65%, 9%);
+    border-radius: 30px;
+    background-color:  #fff;
+    color: #000;
+    transition: 100ms ease-in;
+    cursor: pointer;
+    // background-color: white;
+}
+button:hover{
+    background-color:  hsl(14, 86%, 42%);
+    color: #fff;
+    border: none;  
+   
+}

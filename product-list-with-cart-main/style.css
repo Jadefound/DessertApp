@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Red Hat Text";
+}
+
+* h6 {
+  font-size: 10px;
+  color: gray;
+  font-family: "";
+}
+
+* h4 {
+  font-size: 16px;
+}
+
+* h5 {
+  font-size: 14px;
+  color: hsl(14, 86%, 42%);
+}
+
+button {
+  padding: 10px 40px;
+  border: 1px solid hsl(14, 65%, 9%);
+  border-radius: 30px;
+  background-color: #fff;
+  color: #000;
+  transition: 100ms ease-in;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(14, 86%, 42%);
+  color: #fff;
+  border: none;
+}
+
+.productCard {
+  width: 250px;
+  height: 380px;
+}
+
+.productCard .imgsec {
+  height: 250px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.productCard .imgsec img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.productCard .addToCart {
+  width: 150px;
+  font-weight: 800;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: auto;
+  position: relative;
+  top: -20px;
+}
+
+.productCard .productDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+body {
+  background-color: hsl(20, 50%, 98%);
+  width: 0 auto;
+}
+
+.main-container {
+  overflow: hidden;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin: 5rem 0rem;
+  padding-inline: 20px;
+}
+
+.main-container .leftside h1 {
+  padding-left: 30px;
+}
+
+.main-container .leftside .product-list {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.main-container .rightside {
+  width: 30dvw;
+  background-color: #fff;
+  height: 30%;
+  padding: 10px;
+  position: sticky;
+  top: 10px;
+  right: 20px;
+}
+
+.main-container .rightside h2 {
+  color: hsl(14, 86%, 42%);
+}
+
+.main-container .rightside .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-container .rightside .center p {
+  font-size: 16px;
+  color: hsl(14, 65%, 9%);
+}
+
+.main-container .rightside img {
+  width: 15dvw;
+  opacity: 0.4;
+}
+
+
+@media (max-width: 481px) {
+  .main-container {
+    margin: 0 auto;
+    padding-block: 20px;
+    grid-template-columns: 100px;
+  }
+
+  .main-container>.leftside>.product-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
+
+  .main-container>.rightside{
+    width: 100%;
+    
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
